@@ -1,0 +1,35 @@
+#navbar{
+    transition: all ease 0.3s;
+}
+#navbar:hover{
+    background-color: rgb(255, 255, 255);
+    .navbar-brand{
+      color: #5494da;
+    }
+}
+.nav-link{
+    color: black;
+    transition: all ease 0.3s;
+}
+.nav-link:hover{
+    transform: scale(1.03);
+    color: #5494d9;
+}
+
+.cards-2{
+    z-index: 1;
+    background-color: white;
+    padding-top: 40px;
+    padding-bottom: 5px;
+    transform: scale(1);
+    transition: all ease 0.2s;
+    box-shadow: 1px 1px 10px rgb(129, 129, 129);
+}
+.cards-2:hover{
+    z-index: 1;
+    background-color: white;
+    padding-top: 40px;
+    transform: scale(1.2);
+    padding-bottom: 5px;
+    box-shadow: 1px 1px 10px rgb(129, 129, 129);
+}

@@ -1,0 +1,66 @@
+
+/* Navbar styling */
+#navbar {
+  background-color: black; /* Navbar background color */
+  padding: 10px 0;
+}
+
+#navbar .navbar-nav .nav-link {
+  color: #ffffff; /* Navbar links color */
+  transition: color 0.3s ease;
+}
+
+#navbar .navbar-nav .nav-link:hover {
+  color: #67ba98; /* Navbar links hover color */
+}
+
+#navbar .navbar-nav .nav-link.active {
+  font-weight: bold;
+}
+
+#navbar .navbar-nav .nav-item {
+  margin-right: 15px;
+}
+
+#navbar .navbar-brand img {
+  max-height: 100px;  
+}
+
+#navbar .navbar-toggler {
+  border-color: #ffffff; /* Navbar toggle button color */
+}
+
+#navbar .navbar-toggler-icon {
+  background-color: #ffffff; /* Navbar toggle icon color */
+}
+
+#navbar .navbar-collapse {
+  justify-content: flex-end;
+}
+
+#navbar .navbar-collapse .form-inline .btn {
+  color: #ffffff; /* Button color */
+  border-color: #ffffff; /* Button border color */
+  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+#navbar .navbar-collapse .form-inline .btn:hover {
+  color: #65CCB8; /* Button hover color */
+  background-color: #ffffff; /* Button hover background color */
+  border-color: #ffffff; /* Button hover border color */
+}
+
+/* Dropdown menu styling */
+#navbar .dropdown-menu {
+  background-color: #67ba98; /* Dropdown menu background color */
+}
+
+#navbar .dropdown-menu .dropdown-item {
+  color: #ffffff; /* Dropdown menu item color */
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#navbar .dropdown-menu .dropdown-item:hover {
+  background-color: #57BA98; /* Dropdown menu item hover background color */
+  color: #ffffff; /* Dropdown menu item hover color */
+}

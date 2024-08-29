@@ -1,0 +1,18 @@
+.b-black-1{
+   border: 1px solid black;
+}
+.b-black-2{
+   border: 2px solid black;
+}
+.b-black-3{
+   border: 3px solid black;
+}
+.b-white-1{
+   border: 1px solid rgb(255, 255, 255);
+}
+.b-white-2{
+   border: 2px solid rgb(255, 255, 255);
+}
+.b-white-3{
+   border: 3px solid rgb(255, 255, 255);
+}

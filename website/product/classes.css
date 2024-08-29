@@ -1,0 +1,97 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+/* top bar */
+#top-bar{
+    background-color: #ffffff;
+}
+/* top bar end */
+/* navbar start */
+#mynavbar{
+    background-color: black;
+}
+#mynavbar-logo{
+    color: white;
+}
+#mynavbar-logo:hover{
+    color: #a39514;
+}
+#mylinks-active{
+    color: #a39514;    
+}
+#mylinks{
+    color: rgb(156, 156, 156);
+    transition: all ease 0.2s;
+}
+#mylinks:hover{
+    color: #a39514;
+
+}
+/* classes  */
+#classes-main-div{
+    background-image: url(images/electrical-measurements-with-multimeter-tester-industrial-electricity-test-voltage-automatic-control-box-using-digital-voltmeter-electric-background_140555-1102.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 80rem;
+    height: 40rem;
+}
+
+#classes-main-text{
+    padding-top: 25%;
+}
+
+#cards{
+    border: #a395144f 1px solid;
+    box-shadow: 2px 2px 12px rgb(204, 204, 204);
+    transition: all ease 0.2s;
+
+}
+#cards:hover{
+    border: #ffffff4f 1px solid;
+    box-shadow: 2px 2px 12px rgb(68, 68, 68);
+
+}
+
+#card-image{
+    scale: 1;
+    transition: all ease 0.2s;
+}
+#card-image:hover{
+    scale: 1.04;
+}
+/* classes end */
+
+/* some logos */
+#some-extra-logos{
+    background-image: url(someextralogos/1.JPG);
+    height: 200px;
+    background-position: center;
+    background-repeat:no-repeat ;
+}
+#some-extra-logos:hover{
+    background-image: url(someextralogos/color/5.png);
+    height: 200px;
+    background-position: center;
+    background-repeat:no-repeat ;
+}
+/* some logos end */
+.footer{
+    color: #dedede;
+
+}
+#footer-2{
+text-decoration: none;
+
+}
+
+/* custom css */
+#menubtn{
+    transform: rotate(0deg);
+    transition: all ease 0.5s;
+    background-color: #000;
+}
+#menubtn:hover{
+    transform: rotate(90deg);
+}

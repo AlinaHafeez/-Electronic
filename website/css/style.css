@@ -1,0 +1,711 @@
+/********** CSS **********/
+:root {
+    --primary: #57BA98;
+    --secondary: #3B945E;
+    --light: #65CCB8;
+    --dark: #182628;
+    --Light: #F2F2F2;
+}
+
+h4,
+h5,
+h6,
+.h4,
+.h5,
+.h6 {
+    font-weight: 600 !important;
+}
+
+.py-6 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.my-6 {
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 30px;
+    z-index: 99;
+}
+
+
+/*** Spinner ***/
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*** Button ***/
+.btn {
+    font-weight: 500;
+    transition: .5s;
+}
+
+.btn.btn-primary {
+    color: #FFFFFF;
+}
+
+.btn-square {
+    width: 38px;
+    height: 38px;
+}
+
+.btn-sm-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: url('banner.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+    animation: fadeInUp 2s ease;
+}
+
+/* Image Card */
+.image-card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #F0F0F0;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    width: 90%;
+    max-width: 1200px;}
+
+.card-image {
+    width: 45%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 20px;
+    margin-right: 50px;
+    transition: transform 0.3s ease;
+}
+
+.card-image:hover {
+    transform: scale(1.1);
+}
+
+.card-description {
+    width: 45%;
+    max-width: 400px;
+}
+
+.card-description h3 {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+button {
+display: inline-block;
+background-color: #65CCB8;
+color: #182628;
+padding: 10px 30px;
+border-radius: 30px; /* Make the border curved */
+border: none;
+cursor: pointer;
+transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition effect */
+}
+
+button:hover {
+background-color: #182628;
+color: #65CCB8;
+transform: scale(1.1); /* Scale the button on hover */
+}
+/*** Facts ***/
+.fact-item {
+    transition: .5s;
+}
+
+.fact-item:hover {
+    margin-top: -10px;
+    background: #57BA98 !important;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+}
+
+
+/*** About ***/
+.img-twice::before {
+    position: absolute;
+    content: "";
+    width: 60%;
+    height: 80%;
+    top: 10%;
+    left: 20%;
+    background: var(--primary);
+    border: 25px solid var(--light);
+    border-radius: 6px;
+    z-index: -1;
+}
+
+
+/* Banner */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: url('banner.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+    animation: fadeInUp 2s ease;
+}
+
+/* Image Card */
+.image-card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #F0F0F0;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    width: 90%;
+    max-width: 1200px;}
+
+.card-image {
+    width: 45%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 20px;
+    margin-right: 50px;
+    transition: transform 0.3s ease;
+}
+
+.card-image:hover {
+    transform: scale(1.1);
+}
+
+.card-description {
+    width: 45%;
+    max-width: 400px;
+}
+
+.card-description h3 {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+button {
+display: inline-block;
+background-color: #65CCB8;
+color: #182628;
+padding: 10px 30px;
+border-radius: 30px; /* Make the border curved */
+border: none;
+cursor: pointer;
+transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition effect */
+}
+
+button:hover {
+background-color: #81e6bc;
+color: #65CCB8;
+transform: scale(1.1); /* Scale the button on hover */
+}
+/*** Product ***/
+.product-item {
+    transition: .5s;
+}
+
+.product-item:hover {
+    background: var(--primary) !important;
+}
+
+.product-item:hover * {
+    color: var(--light);
+}
+
+.product-item:hover .border-primary {
+    border-color: var(--light) !important;
+}
+
+.product-item .product-overlay {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(172, 245, 217, 0.5);
+    overflow: hidden;
+    opacity: 0;
+    transition: .5s;
+}
+
+.product-item:hover .product-overlay {
+    height: 100%;
+    opacity: 1;
+}
+
+
+
+
+/*** Testimonial ***/
+
+
+    
+/*** Footer ***/
+.footer .btn.btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    color: var(--light);
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.footer .btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: var(--light);
+    margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+    color: var(--primary);
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+.copyright {
+    background: #111111;
+}
+
+.copyright a {
+    color: var(--primary);
+}
+
+.copyright a:hover {
+    color: var(--light);
+}
+
+/* banner css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 110px 100px;
+}
+
+@media (max-width: 1000px){
+    section{
+        padding: 100px 50px;
+    }
+}
+
+@media (max-width: 600px){
+    section{
+        padding: 125px 30px;
+    }
+}
+
+.box{
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+    color: #fff;
+    text-align: center;
+}
+
+.box video{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.box h1{
+    margin-bottom: 15px;
+    font-size: 65px;
+    text-transform: uppercase;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+.box h3{ 
+    margin-bottom: 40px;
+    font-size: 25px;
+}
+.box a.boxBtn{
+    padding: 15px 35px;
+    background: transparent;
+    border-radius: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    border: 4px solid #fff;
+    transition: all .5s;
+}
+ .box a.boxBtn:hover{
+    background: #fff;
+    color: #57BA98;
+ }
+
+ @media (max-width: 800px){
+    .box{
+       min-height: 600px;
+    }
+    .box h1{
+       font-size: 32px;
+    }
+    .box h3{
+        font-size: 20px;
+    }
+    .box a.boxBtn{
+        padding: 15px 40px;
+    }
+ }
+ /* banner css end */
+
+ /*** Footer ***/
+ .footer .btn.btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    color: #57BA98;
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.footer .btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: white;
+    margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+    color: white;
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+.footer .btn.btn-link:hover {
+    color: white;
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+
+
+
+
+
+
+
+
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+}
+
+.banner {
+    background-color: #57BA98; 
+    text-align: center;
+    padding: 50px 0;
+    font-family: "Geogia";
+}
+
+.banner h1 {
+    font-size: 36px;
+    color: black;
+    margin: 0;
+    font-family:Fantasy;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.product-card {
+    width: 280px; 
+    height: 380px; 
+    background-color: white; 
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    background-color: #A6E5D9; 
+}
+
+.product-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.product-info h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+.product-info p {
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+.product-image {
+    width: 200px; 
+    height: 200px; 
+    display: block;
+}
+
+.testimonial-container {
+    width: 80%;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #57BA98; 
+    border-radius: 10px; 
+    padding: 20px; /* Add padding */
+    background-color: white; 
+}
+
+.testimonial-slide {
+    display: none;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 1s ease-in-out; 
+}
+
+.testimonial-slide.active {
+    display: block;
+    opacity: 1;
+    background-color: white; 
+}
+
+.testimonial-slide img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.testimonial-slide p {
+    font-size: 14px; 
+    color: #333;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.testimonial-slide h3 {
+    font-size: 24px;
+    color: #444;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.testimonial-slide blockquote {
+    font-size: 28px;
+    color: black; 
+    font-family: 'Georgia', serif;
+    margin: 30px 0;
+    position: relative;
+}
+
+.testimonial-slide blockquote:before,
+.testimonial-slide blockquote:after {
+    content: '\201C'; 
+    font-size: 100px;
+    color: black; 
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    opacity: 0.3;
+}
+
+.testimonial-slide blockquote:after {
+    content: '\201D'; 
+    right: -20px;
+    top: auto;
+    bottom: -20px;
+    left: auto;
+}
+
+.testimonial-slide:hover {
+    box-shadow: 0 6px 8px #57BA98 ; 
+    transform: translateY(-5px); 
+}
+
+.testimonial-navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    z-index: 1; 
+}
+
+.testimonial-navigation button {
+    background-color: #57BA98;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.testimonial-navigation button:hover {
+    background-color: #38976d;
+}
+
+@media screen and (max-width: 768px) {
+    .testimonial-container {
+        width: 90%;
+    }
+}
+.logo-container {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.logo-slider {
+    display: flex;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch; 
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+}
+
+.logo-slide {
+    flex: 0 0 auto;
+    margin-right: 20px;
+}
+
+.logo-slide:last-child {
+    margin-right: 0; 
+}
+
+.logo {
+    max-width: 100px; 
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.logo-slider::-webkit-scrollbar {
+    display: none;
+}

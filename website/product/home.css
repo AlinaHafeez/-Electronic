@@ -1,0 +1,120 @@
+body{
+    font-family: Poppins-light;
+}
+.navbar-brand{
+    font-family: russo;
+    transition: all ease 0.3s;
+    /* color: #5494da; */
+}
+.nav-link{
+    color: black;
+}
+#navbar{
+    z-index: 2;
+}
+#main-banner{
+    z-index: 1;
+    margin-top: -3.5rem;
+    opacity: 50%;
+    padding-top: 20rem;
+    padding-bottom: 20rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: url(img/banner.jpg);
+    position: absolute;   
+}
+#precision-electrics-heading{
+    z-index: 2;
+    font-size: 5rem;
+    margin-top: 13rem;
+    position: relative;
+}
+#icons{
+    margin-top: 10rem;
+}
+#icons-text{
+    padding-bottom: 2rem;
+    opacity: 70%;
+}
+#navbar{
+    transition: all ease 0.3;
+}
+#navbar:hover{
+    background-color: red;
+}
+.cards{
+    z-index: 1;
+    background-color: white;
+    padding-top: 40px;
+    padding-bottom: 5px;
+    margin-right: 5%;
+    border-radius: 10px;
+
+    box-shadow: 2px 2px 10px rgb(211, 211, 211);
+}
+.card-images{
+    transition: all ease 0.3s;
+    transform: scale(1);
+}
+.card-images:hover{
+    transform: scale(1.05);
+}
+.card-link{
+    color: gray;
+}
+
+#section-1{
+    border-radius: 10px;
+
+    box-shadow: 2px 2px 10px rgb(139, 139, 139);
+}
+
+#section-1-text-2{
+    font-family: Samsung Sans Light;
+}
+
+
+.cards-2{
+    border-radius: 10px;
+
+    z-index: 1;
+    background-color: white;
+    padding-top: 40px;
+    padding-bottom: 5px;
+    box-shadow: 1px 1px 10px rgb(129, 129, 129);
+}
+
+#icons-2{
+    margin-top: 4rem;
+}
+
+.card-link-2{
+    color: gray;
+    font-size: 4rem;
+}
+#product-table-border{
+    border-radius: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
